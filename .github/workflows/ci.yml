@@ -17,7 +17,7 @@ jobs:
       - name: Auto green
         run: |
           git config --local user.email "979623625@qq.com"
-          git config --local user.name "bei-yang"
+          git config --local user.name "linmu"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           date +"%Y-%m-%d %H:%M:%S.%N" > keepchange.txt
